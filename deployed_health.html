@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>health</title>
+  </head>
+  <div>
+    <h2 style="float: left"><a href="/">logo</a> | health</h2>
+  </div>
+  <div style="clear: both">
+    <form
+      action="/accounts/?target=/"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      username<input type="text" name="username" required />
+      <br />
+      password<input type="password" name="password" required /> <br /><input
+        type="submit"
+        value="login"
+      />
+      <input type="hidden" name="operation" value="login" />
+    </form>
+    <br />
+    Don't have an account?<a href="/accounts/create/"> Sign up </a>
+  </div>
+</html>
