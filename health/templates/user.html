@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div class="canvas">
+      <img class="statusbar" src="/uploads/111.png" />
+      <img class="userpage_profile" src="{{img_url}}" />
+      <div class="userpage_fullname">{{fullname}}</div>
+      <div class="userpage_username">@{{username}}</div>
+
+      {% if is_ownpage==1 %}
+      <a href="/accounts/edit/">
+        <div
+          class="login_next"
+          style="
+            left: 16px;
+            top: 339px;
+            background: #000000;
+            color: #ffffff;
+            line-height: 51px;
+          "
+        >
+          setting
+        </div>
+      </a>
+      <form
+        action="/accounts/logout/"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <div
+          class="login_next"
+          style="
+            top: 447px;
+            background: #ffffff;
+            color: #000000;
+            line-height: 51px;
+          "
+        >
+          logout
+        </div>
+        <input
+          class="login_next"
+          style="opacity: 0; top: 447px; width: 350.3px; height: 59.29px"
+          type="submit"
+        />
+        <input type="hidden" name="operation" value="first_create" />
+      </form>
+      {% else %}
+      <a href="/chat/{{username}}">
+        <div
+          class="login_next"
+          style="
+            left: 16px;
+            top: 354px;
+            background: #ffffff;
+            color: #000000;
+            line-height: 51px;
+          "
+        >
+          chat
+        </div>
+      </a>
+      {% endif %}
+
+      <div class="bottom">
+        <img class="bottom" src="/uploads/444.png" />
+        <a href="/"><div class="bottom_first"></div></a>
+        <a href="/explore/"><div class="bottom_second"></div></a>
+        <a href="/chat/"><div class="bottom_third"></div></a>
+        <a href="/users/{{logname}}/"><div class="bottom_forth"></div></a>
+        <a href="/add/"><div class="bottom_mid"></div></a>
+      </div>
+      <div class="bottomline"></div>
+    </div>
+  </body>
+</html>

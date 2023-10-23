@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="canvas">
+      <img class="statusbar" src="/uploads/111.png" />
+      <div class="hello" style="top: 44px">Hello, {{logname}}</div>
+      <div class="hello" style="top: 88px">{{date}}</div>
+      <div class="bigtext" style="top: 133px">Discover</div>
+
+      <div
+        class="canvas"
+        style="top: 150px; height: 525px; border: 0px; overflow-y: scroll"
+      >
+        {% for post in posts %}
+        <img class="discover1" src="{{post['img_url']}}" />
+        <a href="/users/{{post['owner']}}/">
+          <div class="profile">
+            <img src="{{post['owner_img_url']}}" />
+            <div class="profile_name">{{post['fullname']}}</div>
+            <div class="profile_username">@{{post['owner']}}</div>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+      <div class="bottom">
+        <img class="bottom" src="/uploads/444.png" />
+        <a href="/"><div class="bottom_first"></div></a>
+        <a href="/explore/"><div class="bottom_second"></div></a>
+        <a href="/chat/"><div class="bottom_third"></div></a>
+        <a href="/users/{{logname}}/"><div class="bottom_forth"></div></a>
+        <a href="/add/"><div class="bottom_mid"></div></a>
+      </div>
+      <div class="bottomline"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="canvas">
+      <img class="statusbar" src="/uploads/111.png" />
+      <form
+        action="/accounts/logout/"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <div class="union">
+          <img src="/uploads/333.png" />
+        </div>
+        <input class="union" style="opacity: 0" type="submit" />
+        <input type="hidden" name="operation" value="first_create" />
+      </form>
+      <div class="bigtext">Register</div>
+      <div class="bottomline"></div>
+      <form
+        action="/accounts/?target=/accounts/second_create/"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input
+          class="inputbar"
+          style="top: 228px"
+          type="text"
+          placeholder="Username..."
+          name="username"
+          required
+        />
+        <input
+          class="inputbar"
+          style="top: 313px"
+          type="password"
+          placeholder="Password..."
+          name="password"
+          required
+        />
+        <input class="login_next" type="submit" value="next" />
+        <input type="hidden" name="operation" value="first_create" />
+      </form>
+    </div>
+  </body>
+</html>

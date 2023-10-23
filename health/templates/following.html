@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>health</title>
+    <style>
+      .total {
+        margin: auto;
+        width: fit-content;
+        clear: both;
+      }
+      .following {
+        width: 600px;
+        height: 55px;
+        border: 1px solid black;
+        margin: 10px;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2 style="float: left"><a href="/">logo</a> | health</h2>
+      <h2 style="float: right">
+        <a href="/explore/">explore</a> |
+        <a href="/users/{{logname}}/">{{logname}}</a>
+      </h2>
+    </div>
+    <div class="total">
+      <p style="float: left">Followings</p>
+      {% for following in following %}
+      <div class="following">
+        <img
+          style="width: 40px; height: 50px; float: left"
+          src="{{following['user_img_url']}}"
+          alt="user_img_url"
+        />
+        <a href="/users/{{following['username']}}/"
+          >{{following['username']}}</a
+        >
+        {% if following['username'] != logname %} {% if
+        following['logname_follows_username'] %}
+        <p style="float: right">following</p>
+        <form
+          action="/following/?target=/users/{{username}}/following/"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <input type="submit" name="unfollow" value="unfollow" />
+          <input type="hidden" name="username" value="{{following.username}}" />
+          <input type="hidden" name="operation" value="unfollow" />
+        </form>
+        {% else %}
+        <p style="float: right">not following</p>
+        <form
+          action="/following/?target=/users/{{username}}/following/"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <input type="submit" name="follow" value="follow" />
+          <input type="hidden" name="username" value="{{following.username}}" />
+          <input type="hidden" name="operation" value="follow" />
+        </form>
+        {% endif %} {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>

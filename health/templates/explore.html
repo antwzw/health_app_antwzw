@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="canvas">
+      <img class="statusbar" src="/uploads/111.png" />
+      <div class="bigtext" style="top: 75px">Explore</div>
+      <div class="canvas" style="top: 100px; height: 502px; border: 0px">
+        {% for user in users %}
+        <img class="line" src="/uploads/555.png" />
+        <a href="/users/{{user['username']}}/">
+          <div class="profile">
+            <img src="{{user['user_img_url']}}" />
+            <div class="profile_name">{{user['fullname']}}</div>
+            <div class="profile_username">@{{user['username']}}</div>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+      <div class="bottom">
+        <img class="bottom" src="/uploads/444.png" />
+        <a href="/"><div class="bottom_first"></div></a>
+        <a href="/explore/"><div class="bottom_second"></div></a>
+        <a href="/chat/"><div class="bottom_third"></div></a>
+        <a href="/users/{{logname}}/"><div class="bottom_forth"></div></a>
+        <a href="/add/"><div class="bottom_mid"></div></a>
+      </div>
+      <div class="bottomline"></div>
+    </div>
+  </body>
+</html>

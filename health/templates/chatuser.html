@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="canvas">
+      <img class="statusbar" src="/uploads/111.png" />
+
+      <div class="title">{{username}}</div>
+      <img class="line" style="top: 50px" src="/uploads/555.png" />
+        <div class="canvas" style="top: 46px; height: 500px; border: 10px; overflow-y: scroll; ">
+            {% for comment in comments %}
+            {% if comment["owner"] != logname %}
+                <div class="chatcontent" style="color: #75a1d6; text-align: left;">{{comment['text']}}</div>
+            {% else %}
+                <div class="chatcontent" style="color: #577f22; text-align: right;">{{comment['text']}}</div>
+            {% endif %}
+            {% endfor %}
+        </div>
+      <form
+        action="/comments/?target=/chat/{{username}}/"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input type="hidden" name="operation" value="create" />
+        <input type="hidden" name="username" value="{{username}}" />
+        <input
+          class="inputbar"
+          style="top: 600px"
+          type="text"
+          name="text"
+          required
+        />
+      </form>
+      <div class="bottom">
+        <img class="bottom" src="/uploads/444.png" />
+        <a href="/"><div class="bottom_first"></div></a>
+        <a href="/explore/"><div class="bottom_second"></div></a>
+        <a href="/chat/"><div class="bottom_third"></div></a>
+        <a href="/users/{{logname}}/"><div class="bottom_forth"></div></a>
+        <a href="/add/"><div class="bottom_mid"></div></a>
+      </div>
+      <div class="bottomline"></div>
+    </div>
+  </body>
+</html>

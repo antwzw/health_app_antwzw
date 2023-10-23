@@ -1,0 +1,407 @@
+.canvas {
+    position: relative;
+    width: 375px;
+    height: 812px;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    background: #ffffff;
+  }
+  
+  .statusbar {
+    position: relative;
+    width: 375px;
+    height: 44px;
+    left: calc(50% - 375px / 2);
+    top: 0px;
+    background: #ffffff;
+  }
+  
+  .login_next {
+    position: absolute;
+    width: 343px;
+    height: 52px;
+    left: 16px;
+    top: 430px;
+  
+    background: #000000;
+    border: 3.65385px solid #000000;
+    border-radius: 10px;
+  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35.0215px;
+    line-height: 41px;
+    /* identical to box height */
+  
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  
+    color: #ffffff;
+  }
+  
+  .firstpage_login {
+    position: absolute;
+    width: 305.1px;
+    height: 95px;
+    left: 35px;
+    top: 231px;
+  
+    border-radius: 10px;
+    background: #ffffff;
+    border: 3.65385px solid #000000;
+  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35.0215px;
+    line-height: 95px;
+    /* identical to box height */
+  
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  
+  .firstpage_register {
+    position: absolute;
+    width: 305.1px;
+    height: 95px;
+    left: 35px;
+    top: 441px;
+  
+    border-radius: 10px;
+    background: #000000;
+    border: 3.65385px solid #000000;
+  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35.0215px;
+    line-height: 95px;
+    /* identical to box height */
+  
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  .bottomline {
+    position: absolute;
+    left: 32%;
+    right: 32%;
+    top: 98.4%;
+    bottom: 0.99%;
+  
+    background: #000000;
+    border-radius: 10px;
+  }
+  
+  .union {
+    position: absolute;
+    width: 38.15px;
+    height: 37.3px;
+    left: 20px;
+    top: 44px;
+  
+    /* Black 8 */
+  }
+  
+  .bigtext {
+    position: absolute;
+    width: 196px;
+    height: 53px;
+    left: 23px;
+    top: 99px;
+  
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+  
+    color: #000000;
+  }
+  
+  .inputbar {
+    position: absolute;
+    width: 330px;
+    height: 52px;
+    left: 23px;
+    /* top: 228px; */
+  
+    background: #ffffff;
+    border: 2px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+    font-size: 28px;
+  }
+  
+  .hello {
+    position: absolute;
+    width: 320px;
+    height: 44px;
+    left: 16px;
+  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+  
+    color: #000000;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 9;
+    flex-grow: 0;
+    z-index: 9;
+  }
+  
+  .discover1 {
+    position: relative;
+    width: 343px;
+    height: 343px;
+    top: 0px;
+    left: calc(50% - 343px / 2);
+    overflow: hidden;
+  }
+  
+  .profile {
+    position: relative;
+    width: 357px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+  }
+  
+  .profile img {
+    position: absolute;
+    left: 16px;
+    top: 0px;
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .profile_name {
+    position: absolute;
+    left: 26%;
+    top: 7%;
+  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+  
+    color: #000000;
+  }
+  
+  .profile_username {
+    position: absolute;
+    left: 26%;
+    top: 58.3%;
+  
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 19px;
+    /* identical to box height */
+  
+    display: flex;
+    align-items: center;
+  
+    color: rgba(146, 143, 143, 0.8);
+  }
+  
+  .bottom {
+    position: absolute;
+    width: 375px;
+    height: 88px;
+    left: 0px;
+    bottom: 0px;
+  }
+  
+  .bottom_first {
+    position: absolute;
+    left: 2.93%;
+    right: 86.4%;
+    top: 10.84%;
+    bottom: 40.96%;
+  }
+  
+  .bottom_second {
+    position: absolute;
+    left: 21.87%;
+    right: 67.47%;
+    top: 10.84%;
+    bottom: 40.96%;
+  }
+  
+  .bottom_third {
+    position: absolute;
+    left: 67.73%;
+    right: 21.6%;
+    top: 10.84%;
+    bottom: 40.96%;
+  }
+  
+  .bottom_forth {
+    position: absolute;
+    left: 86.4%;
+    right: 2.93%;
+    top: 10.84%;
+    bottom: 40.96%;
+  }
+  
+  .bottom_mid {
+    position: absolute;
+    left: 40.8%;
+    right: 40.53%;
+    top: 10.84%;
+    bottom: 40.96%;
+  }
+  
+  .userpage_profile {
+    position: absolute;
+    width: 128px;
+    height: 128.15px;
+    left: calc(50% - 128px / 2);
+    top: 76px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .userpage_fullname {
+    position: absolute;
+    width: 289px;
+    height: 40px;
+    left: calc(50% - 289px / 2);
+    top: 236px;
+  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+  
+    color: #000000;
+  }
+  
+  .userpage_username {
+    position: absolute;
+    width: 104px;
+    height: 22px;
+    left: calc(50% - 104px / 2);
+    top: 285px;
+  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+  
+    color: #000000;
+  }
+  
+  .smalltext {
+    position: absolute;
+    width: 144px;
+    height: 38px;
+    left: 23px;
+    top: 178px;
+  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    /* identical to box height */
+  
+    display: flex;
+    align-items: center;
+  
+    color: #000000;
+  }
+  
+  .line {
+    position: relative;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+  
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .title {
+    position: absolute;
+    height: 22px;
+    left: 63px;
+    right: 64px;
+    top: 50px;
+  
+    font-family: "SF Pro Text";
+    font-size: 32px;
+    line-height: 22px;
+    /* identical to box height, or 129% */
+  
+    text-align: center;
+    letter-spacing: -0.408px;
+  
+    color: #000000;
+  }
+  
+  .chatcontent {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    height: 50px;
+    width: 340px;
+    left: calc(50% - 340px / 2);
+      
+    
+  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 50px;
+    /* identical to box height */
+  
+    align-items: center;
+  }
+  

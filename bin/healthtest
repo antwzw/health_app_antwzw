@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# healthtest
+#
+# test
+#
+# Hangxin Chen <clydechx@umich.edu>
+
+# Stop on errors, print commands
+# See https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
+set -Eeuo pipefail
+set -x
+pycodestyle health
+pydocstyle health
+pylint --disable=cyclic-import --unsafe-load-any-extension=y health
+pytest -v tests

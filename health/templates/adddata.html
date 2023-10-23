@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div class="canvas">
+      <img class="statusbar" src="/uploads/111.png" />
+      <div class="bigtext" style="top: 58px">DataToday</div>
+      <form
+        action="/accounts/?target=/"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input
+          class="inputbar"
+          style="top: 137px"
+          type="text"
+          placeholder="Body temperature(°C)"
+          name="fullname"
+          required
+        />
+        <input
+          class="inputbar"
+          style="top: 237px"
+          type="text"
+          placeholder="Diastolic Pressure(mmHg)"
+          name="email"
+          required
+        />
+        <input
+          class="inputbar"
+          style="top: 337px"
+          type="text"
+          placeholder="Systolic Pressure(mmHg)"
+          name="email"
+          required
+        />
+        <input
+          class="inputbar"
+          style="top: 437px"
+          type="text"
+          placeholder="Heart Rate(bpm)"
+          name="email"
+          required
+        />
+        <input class="login_next" style="top: 557px" type="submit" value="save" />
+        <input type="hidden" name="operation" value="edit_account" />
+      </form>
+      <div class="bottom">
+        <img class="bottom" src="/uploads/444.png" />
+        <a href="/"><div class="bottom_first"></div></a>
+        <a href="/explore/"><div class="bottom_second"></div></a>
+        <a href="/chat/"><div class="bottom_third"></div></a>
+        <a href="/users/{{logname}}/"><div class="bottom_forth"></div></a>
+        <a href="/add/"><div class="bottom_mid"></div></a>
+      </div>
+      <div class="bottomline"></div>
+    </div>
+  </body>
+</html>
